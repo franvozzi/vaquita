@@ -2,36 +2,36 @@
   <img src="/logo.png" alt="Vaquita Logo" width="400"/>
 </div>
 
-# Vaquita - Plataforma de Crowdfunding Basada en Criptomonedas
+# Vaquita - Cryptocurrency-Based Crowdfunding Platform
 
-Vaquita es una plataforma de crowdfunding innovadora que utiliza tecnología blockchain para facilitar la recaudación de fondos de manera segura y transparente. Inspirado en el lunfardo argentino "Hagamos una vaquita", el proyecto busca combinar la facilidad del crowdfunding con la flexibilidad y seguridad de las criptomonedas.
+Vaquita is an innovative crowdfunding platform that uses blockchain technology to facilitate secure and transparent fundraising. Inspired by the Argentine lunfardo phrase "Hagamos una vaquita" (let's chip in), the project aims to combine the ease of crowdfunding with the flexibility and security of cryptocurrencies.
 
-## Tabla de Contenidos
+## Table of Contents
 
-- [Visión General](#visión-general)
-- [Características](#características)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Arquitectura](#arquitectura)
-- [Instalación](#instalación)
-- [Uso](#uso)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
-- [Contacto](#contacto)
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contribution)
+- [License](#license)
+- [Contact](#contact)
 
-## Visión General
+## Overview
 
-Vaquita tiene como objetivo proporcionar una plataforma fácil de usar para proyectos que buscan financiarse a través de contribuciones en criptomonedas. Ofrece una interfaz intuitiva tanto para creadores de proyectos como para donantes, con el respaldo de contratos inteligentes para garantizar la transparencia y seguridad de las transacciones.
+Vaquita aims to provide an easy-to-use platform for projects seeking funding through cryptocurrency contributions. It offers an intuitive interface for both project creators and donors, backed by smart contracts to ensure transparency and security of transactions.
 
-## Características
+## Features
 
-- **Creación de Proyectos:** Los usuarios pueden crear campañas de crowdfunding con descripciones detalladas, objetivos y plazos.
-- **Contribuciones con Criptomonedas:** Soporte para diversas criptomonedas para contribuir a proyectos.
-- **Transparencia y Seguridad:** Uso de contratos inteligentes para gestionar las contribuciones y asegurar el cumplimiento de las condiciones.
-- **Interfaz Intuitiva:** Diseño de frontend amigable con React para una experiencia de usuario fluida.
-- **Gestión de Usuarios:** Autenticación y autorización seguras utilizando JWT.
-- **Visualización de Proyectos:** Listado y visualización de proyectos activos, en curso y finalizados.
+- **Project Creation:** Users can create crowdfunding campaigns with detailed descriptions, goals, and deadlines.
+- **Cryptocurrency Contributions:** Support for various cryptocurrencies to contribute to projects.
+- **Transparency and Security:** Use of smart contracts to manage contributions and ensure compliance with terms.
+- **Intuitive Interface:** User-friendly frontend design with React for a smooth user experience.
+- **User Management:** Secure authentication and authorization using JWT.
+- **Project Visualization:** Listing and viewing of active, ongoing, and completed projects.
 
-## Tecnologías Utilizadas
+## Technologies used
 
 - ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 - ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -45,79 +45,78 @@ Vaquita tiene como objetivo proporcionar una plataforma fácil de usar para proy
 - ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 - ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-## Arquitectura
+## Architecture
 
-El proyecto utiliza una arquitectura basada en microservicios para el backend, con una base de datos PostgreSQL para el almacenamiento de datos. Los contratos inteligentes en la blockchain de Ethereum gestionan las contribuciones y la transparencia. La aplicación frontend está construida con React y se comunica con el backend a través de una API REST.
+The project uses a microservices architecture for the backend, with a PostgreSQL database for data storage. Smart contracts on the Ethereum blockchain manage contributions and transparency. The frontend application is built with React and communicates with the backend through a REST API.
 
-## Instalación
+## Installation
 
-### Prerrequisitos
+### Prerequisites
 
-- [Node.js](https://nodejs.org/) v16 o superior
-- [PostgreSQL](https://www.postgresql.org/) v12 o superior
-- [Truffle](https://www.trufflesuite.com/truffle) para contratos inteligentes
-- [Ganache](https://www.trufflesuite.com/ganache) para pruebas en blockchain
-
-### Clonación del Repositorio
+- [Node.js](https://nodejs.org/) v16 or higher
+- [PostgreSQL](https://www.postgresql.org/) v12 or higher
+- [Truffle](https://www.trufflesuite.com/truffle) for smart contracts
+- [Ganache](https://www.trufflesuite.com/ganache) for blockchain testing
+  
+### Cloning the Repository
 
 ```bash
 git clone https://github.com/franvozzi/vaquita.git
 cd vaquita
 ```
-## Instalación de Dependencias
-### Instalación de dependencias del frontend
-```bash
+## Installing Dependencies
+### Frontend Dependencies
+```
 cd frontend
 npm install
 ```
-
-### Instalación de dependencias del backend
+### Backend Dependencies
 ```bash
 cd ../backend
 npm install
 ```
 
-### Configuración del Entorno
-Copia el archivo de ejemplo de configuración y ajusta las variables:
+### Environment Setup
+Copy the example configuration file and adjust the variables:
 ```bash
 cp backend/.env.example backend/.env
 cp frontend/.env.example frontend/.env
 ```
-Edita los archivos .env para incluir la configuración de tu base de datos y API keys.
+Edit the .env files to include your database configuration and API keys.
 
-### Iniciar el frontend
+### Starting the Frontend
 ```bash
 cd frontend
 npm start
 ```
 
-### Iniciar el backend
+### Starting the Backend
 ```bash
 cd ../backend
 npm start
 ```
 
-## Uso
-Crear una Cuenta: Regístrate en la plataforma para crear y gestionar proyectos.
-Crear un Proyecto: Completa los detalles del proyecto y publica para recibir contribuciones.
-Contribuir a un Proyecto: Navega por los proyectos disponibles y contribuye con criptomonedas.
-Monitorear Contribuciones: Revisa el estado de las contribuciones y el progreso del proyecto.
+## Usage
+- Create an Account: Register on the platform to create and manage projects.
+- Create a Project: Fill in the project details and publish to receive contributions.
+- Contribute to a Project: Browse available projects and contribute with cryptocurrencies.
+- Monitor Contributions: Check the status of contributions and project progress.
 
-## Contribución
-Las contribuciones son bienvenidas. Para contribuir al proyecto, por favor sigue estos pasos:
+## Contribution
+Contributions are welcome. To contribute to the project, please follow these steps:
 
-Haz un fork del repositorio.
-Crea una rama para tu feature o bugfix (git checkout -b feature/nueva-funcionalidad).
-Realiza tus cambios y confirma (git commit -am 'Añadir nueva funcionalidad').
-Empuja la rama al repositorio remoto (git push origin feature/nueva-funcionalidad).
-Crea un pull request en GitHub.
+  1. Fork the repository.
+  2. Create a branch for your feature or bugfix (git checkout -b feature/new-feature).
+  3. Make your changes and commit (git commit -am 'Add new feature').
+  4. Push the branch to the remote repository (git push origin feature/new-feature).
+  5. Create a pull request on GitHub.
 
-## Licencia
-Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Contacto
+## Contact
 Francisco Vozzi - franciscovozzi@outlook.com
 GitHub: franvozzi
-¡Gracias por tu interés en Vaquita! Esperamos que encuentres útil y emocionante esta plataforma de crowdfunding basada en criptomonedas.
+Thank you for your interest in Vaquita! We hope you find this cryptocurrency-based crowdfunding platform useful and exciting.
 
-Este `README.md` proporciona una visión general del proyecto, detalles sobre su instalación y uso, y cómo contribuir. Asegúrate de personalizar cualquier detalle específico según avance el desarrollo del proyecto.
+This README.md provides an overview of the project, details on installation and usage, and how to contribute. Be sure to customize any specific details as the project develops.
